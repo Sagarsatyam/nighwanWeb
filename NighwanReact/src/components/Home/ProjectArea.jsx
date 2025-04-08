@@ -1,4 +1,3 @@
-// export default ProjectArea; 
 import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Pagination } from 'swiper/modules';
@@ -15,10 +14,10 @@ import { Link } from 'react-router-dom';
 const projects = [
   { img: ERP, title: "ERP System" },
   { img: AI, title: "AI-Powered Sales Forecasting" },
-  { img: B2B, title: "B2B E-Commerce Platform", className: "black-text" },
+  { img: B2B, title: "B2B E-Commerce Platform"},
   { img: IOT, title: "IoT-Enabled Predictive Maintenance" },
   { img: HRMS, title: "HRMS with Job Portal" },
-  { img: TMS, title: "Transport Management System", className: "black-text" },
+  { img: TMS, title: "Transport Management System"},
 ];
 
 const ProjectArea = () => {
@@ -27,7 +26,7 @@ const ProjectArea = () => {
       <div className="custom-container">
         <div className="custom-row justify-content-between">
           <div className="project-left-details">
-            <h5 className="section-subtitle">PRODUCTS</h5>
+            <h5 className="heading">PRODUCTS</h5>
             <h2 className="section-title">
               Showcase of
               <br />
@@ -62,41 +61,35 @@ const ProjectArea = () => {
                 }}
                 loop={false}
                 spaceBetween={30}
-                slidesPerView={1} // Initially 1 slide visible
+                slidesPerView={1}
                 breakpoints={{
-                  768: { slidesPerView: 3 }, // Shows 3 slides at a time on larger screens
+                  768: { slidesPerView: 3 },
                 }}
               >
                 {projects.map((project, index) => (
                   <SwiperSlide key={index}>
+                    <Link style={{ color: 'white' }} to="/products">
                     <div className="project-item">
                       <div className="project-item-inner">
-                        <h2 className={project.className || ''}>
-                          <Link style={{ color: 'black' }} to="/products">
-                            {project.title}
-                          </Link>
+                        <h2 style={{color: 'white'}}>
+                          {project.title}
                         </h2>
                         <img src={project.img} alt={`Project ${index + 1}`} />
                       </div>
                     </div>
+                    </Link>
                   </SwiperSlide>
                 ))}
               </Swiper>
 
-              {/* Pagination (Sliding Bar) */}
               <div className="swiper-pagination" style={{ marginTop: '20px' }}></div>
             </div>
           </div>
         </div>
       </div>
 
-      {/* Inline CSS */}
       <style>
         {`
-          .black-text {
-            color: black !important;
-          }
-
           .swiper-pagination {
             margin-top: 20px;
           }

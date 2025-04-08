@@ -3,9 +3,13 @@ import heroCareerAbout from '../../assets/imgs/career top.png'; // Adjust the pa
 import '../../assets/css/style.css'; // Import your custom CSS
 import '../../assets/css/responsive.css'; // Import your responsive CSS
 
-const CompanyServiceArea = () => {
+const     CompanyServiceArea = () => {
   return (
+    
     <section className="company-service-area career-service-area">
+      <div className="headings text-center">
+              <h5 className="heading">Career</h5>
+              </div>
       <div className="custom-container">
         <div className="hero-service-about">
           <img src={heroCareerAbout} alt="Service About" />

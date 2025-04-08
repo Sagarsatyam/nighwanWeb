@@ -1,128 +1,87 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import news1 from '../../assets/imgs/news-1.jpg'; // Adjust the path to your assets
-import news2 from '../../assets/imgs/news-2.jpg';
-import news3 from '../../assets/imgs/news-3.jpg';
+import aimlImgbM from '../../assets/imgs/bM/aiml.png'; 
+import erpImgbM from '../../assets/imgs/bM/erp.png';
+import hrmsImgbM from '../../assets/imgs/bM/hrms.png'; 
 import '../../assets/css/style.css'; // Import your custom CSS
 import '../../assets/css/responsive.css'; // Import your responsive CSS
 
 const NewsArea = () => {
   return (
     <section className="news-area">
-      <div className="custom-container">
-        <div className="section-header d-flex align-items-end justify-content-between">
-          <div className="left">
-            <h5 className="section-subtitle">INTERESTING ARTICLES</h5>
-            <h2 className="section-title">
-              Read daily news about <br />
-              startup companies
-            </h2>
-          </div>
-          <p>
-            In today's rapidly evolving world, technology is constantly shaping the way we live and
-            interact. From artificial intelligence and automation to virtual reality, the pace of
-            technological advancements is staggering.
-          </p>
+    <div className="custom-container">
+      {/* Sticky News */}
+      <Link to="/blogs/aiml"  >
+      <div className="sticky-news d-flex card-h" style={{ marginBottom: '5px' }}>
+        <div className="news-img-box">
+          <img src={aimlImgbM} alt="News" />
         </div>
+        <div className="news-content">
+          {/* <h5 className="section-subtitle">MOBILE DEVELOPMENT</h5> */}
+          <h2 className="section-title">
+          How AI and Lean Manufacturing Are Revolutionizing the Indian Industry
+          </h2>
+          <p style={{ fontStyle: 'italic' }}>
+          Discover how Artificial Intelligence (AI) and Lean Manufacturing are reshaping the Indian industry by boosting efficiency, reducing costs, and improving product quality. Learn about key AI-driven innovations like predictive maintenance, smart automation, and supply chain optimization that are transforming manufacturing processes. Stay ahead of the competition with cutting-edge strategies!    
+                    </p>
+          <Link to="/blogs/aiml" className="theme-btn">
+            <i className="iconoir-arrow-up-right"></i>
+          </Link>
+        </div>
+      </div>
+      </Link>
 
-        <div className="sticky-news d-flex card-h">
+      {/* News Items */}
+      <div className="news-items align-items-start">
+        {/* News Item 1 */}
+        <Link to="/blogs/erp"  >
+        <div className="news-item card-h" style={{ marginBottom: '5px' }}>
           <div className="news-img-box">
-            <img src={news1} alt="News" />
+            <img src={erpImgbM} alt="News" />
           </div>
-          <div className="news-content">
-            <h5 className="section-subtitle section-subtitle1">MOBILE DEVELOPMENT</h5>
+          <div className="news-item-body">
+            {/* <h5 className="section-subtitle">WEB DEVELOPMENT</h5> */}
             <h2 className="section-title">
-              <Link to="/blog-detail">
-                OpenAI launches new alignment division to tackle risks of superintelligent AI
+              <Link to="/blogs/erp">
+              Why Your Business Needs an Integrated ERP System in 2025
               </Link>
             </h2>
-            <p>
-              Small UK merchants, businesses, and other enterprises can now use Tap to Pay on
-              service to replace payment terminals at point of sale.
-            </p>
-            <ul>
-              <li>
-                <i className="las la-check"></i> Collaboration Tools
-              </li>
-              <li>
-                <i className="las la-check"></i> Smart Reminders
-              </li>
-            </ul>
-            <Link to="/blog-detail" className="theme-btn">
+            <p style={{ fontStyle: 'italic' }}>
+            Is your business ready for 2025? Discover why an integrated ERP system is essential for streamlining operations, improving efficiency, and gaining a competitive edge. Explore the latest trends in AI-powered automation, cloud-based ERP, and data security to future-proof your business. Learn how Nighwan Technology can help!
+
+</p>
+            <Link to="/blogs/erp" className="theme-btn">
               <i className="iconoir-arrow-up-right"></i>
             </Link>
           </div>
         </div>
+        </Link>
 
-        <div className="news-items d-flex align-items-start">
-          <div className="news-item card-h">
-            <div className="news-img-box">
-              <img src={news2} alt="News" />
-            </div>
-            <div className="news-item-body">
-              <h5 className="section-subtitle">WEB DEVELOPMENT</h5>
-              <h2 className="section-title">
-                <Link to="/blog-detail">
-                  Bluebase launches Tap to Pay on smartphone for international and domestic business
-                </Link>
-              </h2>
-              <p>
-                Small UK merchants, businesses, and other enterprises can now use Tap to Pay on
-                service to replace payment terminals at point of sale.
-              </p>
-              <ul>
-                <li>
-                  <i className="las la-check"></i> Collaboration Tools
-                </li>
-                <li>
-                  <i className="las la-check"></i> Smart Reminders
-                </li>
-                <li>
-                  <i className="las la-check"></i> Requirement
-                </li>
-                <li>
-                  <i className="las la-check"></i> Task Management
-                </li>
-              </ul>
-              <Link to="/blog-detail" className="theme-btn">
-                <i className="iconoir-arrow-up-right"></i>
-              </Link>
-            </div>
+        {/* News Item 2 */}
+        <Link to="/blogs/hrms" >
+        <div className="news-item card-h">
+          <div className="news-img-box">
+            <img src={hrmsImgbM} alt="News" />
           </div>
-          <div className="news-item card-h">
-            <div className="news-img-box">
-              <img src={news3} alt="News" />
-            </div>
-            <div className="news-item-body">
-              <h5 className="section-subtitle">CLOUD COMPUTING</h5>
-              <h2 className="section-title">
-                <Link to="/blog-detail">
-                  Google Bard launches in EU, overcoming data privacy concerns in the region
-                </Link>
-              </h2>
-              <p>
-                Small UK merchants, businesses, and other enterprises can now use Tap to Pay on
-                service to replace payment terminals at point of sale.
-              </p>
-              <ul>
-                <li>
-                  <i className="las la-check"></i> Collaboration Tools
-                </li>
-                <li>
-                  <i className="las la-check"></i> Smart Reminders
-                </li>
-                <li>
-                  <i className="las la-check"></i> Requirement
-                </li>
-              </ul>
-              <Link to="/blog-detail" className="theme-btn">
-                <i className="iconoir-arrow-up-right"></i>
-              </Link>
-            </div>
+          <div className="news-item-body">
+            {/* <h5 className="section-subtitle">WEB DEVELOPMENT</h5> */}
+            <h2 className="section-title">   
+            <Link to={"/blogs/hrms"}>
+            Transforming Workforce Management with AI-Powered HRMS Solutions
+            </Link>  
+            </h2>
+            <p style={{ fontStyle: 'italic' }}>
+            HR management is evolving with AI-powered HRMS solutions! Learn how automated payroll, smart recruitment tools, real-time attendance tracking, and AI-driven performance analytics are transforming workforce management. Discover why businesses need AI HRMS in 2025 and how Nighwan Technology can help enhance your HR operations.
+</p>
+            <Link to="/blogs/hrms" className="theme-btn">
+              <i className="iconoir-arrow-up-right"></i>
+            </Link>
           </div>
         </div>
+        </Link>
       </div>
-    </section>
+    </div>
+  </section>  
   );
 };
 

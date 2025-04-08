@@ -13,7 +13,7 @@ const ClientArea = () => {
   return (
     <section className="client-area client-area-2">
       <div className="custom-container">
-        <p>Slack is used by over 60,000+ companies across the world</p>
+        <h1>Slack is used by over 60,000+ companies across the world</h1>
         <div className="clients clients-marquee d-flex align-items-center">
           <div className="client-logo simple-shadow">
             <img src={youtubeLogo} alt="Client" />

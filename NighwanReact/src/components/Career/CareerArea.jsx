@@ -8,7 +8,7 @@ const CareerArea = () => {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
   const [currentPage, setCurrentPage] = useState(1);
-  const jobsPerPage = 5;
+  const jobsPerPage = 3;
 
   useEffect(() => {
     const fetchJobs = async () => {
@@ -18,7 +18,7 @@ const CareerArea = () => {
         const filteredJobs = data.filter(job => job.isActive);
         setJobListings(filteredJobs);
       } catch (err) {
-        setError('Failed to fetch job listings');
+        setError('No Record Found');
       } finally {
         setLoading(false);
       }
@@ -45,8 +45,28 @@ const CareerArea = () => {
     }
   };
 
+  if (loading) {
+    return (
+      <section className="career-area" style={{ paddingTop: '0' }}>
+        <div className="custom-container">
+          <p>Loading job listings...</p>
+        </div>
+      </section>
+    );
+  }
+
+  if (error) {
+    return (
+      <section className="career-area" style={{ paddingTop: '0' }}>
+        <div className="custom-container">
+          <p className="error">{error}</p>
+        </div>
+      </section>
+    );
+  }
+
   return (
-    <section className="career-area" style={{ paddingTop: '0' }} >
+    <section className="career-area" style={{ paddingTop: '0' }}>
       <div className="custom-container">
         <div className="career-body d-flex">
           <div className="career-left">
@@ -61,47 +81,45 @@ const CareerArea = () => {
           </div>
 
           <div className="career-lists">
-            {loading && <p>Loading job listings...</p>}
-            {error && <p className="error">{error}</p>}
-            {!loading && !error && jobListings.length === 0 && <p>No job openings available.</p>}
-            {!loading &&
-              !error &&
-              currentJobs.map((job) => (
-                <Link key={job.jobPostId} to={`/job/${job.jobPostId}`} style={{ textDecoration: 'none', color: 'inherit' }}>
-                  <div className="career-box">
-                    <span className="location">{job.jobLocationName}</span>
-                    <h2>
-                      {job.designationName} - <span>{job.departmentName}</span>
-                    </h2>
-                    <p>Minimum Experience: {job.minimumExperience}</p>
-                    <div className="career-time">
-                      <span>
-                        <i className="las la-clock"></i> {job.jobtypeName}
-                      </span>
-                      <span>
-                        <i className="las la-dollar-sign"></i> {job.salaryAmount}
-                      </span>
-                    </div>
+            {jobListings.length === 0 && <p>No job openings available.</p>}
+            {currentJobs.map((job) => (
+                <div className="career-box">
+                  <span className="location">{job.jobLocationName}</span>
+              <Link key={job.jobPostId} to={`/job/${job.jobPostId}`} style={{ textDecoration: 'none', color: 'inherit' }}>
+                  <span className="apply">Apply</span>
+                  </Link>
+                  <h2>
+                    {job.designationName} - <span>{job.departmentName}</span>
+                  </h2>
+                  <p>Minimum Experience: {job.minimumExperience}</p>
+                  <div className="career-time">
+                    <span>
+                      <i className="las la-clock"></i> {job.jobtypeName}
+                    </span>
+                    <span>
+                      <i className="las la-dollar-sign"></i> {job.salaryAmount}
+                    </span>
+                    
                   </div>
-                </Link>
-              ))}
-            {!loading && !error && jobListings.length > jobsPerPage && (
+                </div>
+            ))}
+            {jobListings.length > jobsPerPage && (
               <div className="pagination" style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', gap: '10px', marginTop: '20px' }}>
-                <button 
-                  onClick={prevPage} 
-                  disabled={currentPage === 1} 
-                  style={{ 
-                    backgroundColor: 'rgb(255, 124, 32)', 
-                    color: 'white', 
-                    border: 'none', 
-                    padding: '10px 20px', 
-                    cursor: currentPage === 1 ? 'not-allowed' : 'pointer', 
+                <button
+                  onClick={prevPage}
+                  disabled={currentPage === 1}
+                  style={{
+                    backgroundColor: 'rgb(255, 124, 32)',
+                    color: 'white',
+                    border: 'none',
+                    padding: '10px 20px',
+                    cursor: currentPage === 1 ? 'not-allowed' : 'pointer',
                     opacity: currentPage === 1 ? 0.5 : 1,
                     borderRadius: '5px',
                     fontSize: '16px',
                     transition: '0.3s',
                     width: '100px',
-                    textAlign: 'center'
+                    textAlign: 'center',
                   }}
                 >
                   Previous
@@ -109,21 +127,21 @@ const CareerArea = () => {
                 <span style={{ fontSize: '18px', fontWeight: 'bold' }}>
                   Page {currentPage} of {totalPages}
                 </span>
-                <button 
-                  onClick={nextPage} 
-                  disabled={currentPage === totalPages} 
-                  style={{ 
-                    backgroundColor: 'rgb(255, 124, 32)', 
-                    color: 'white', 
-                    border: 'none', 
-                    padding: '10px 20px', 
-                    cursor: currentPage === totalPages ? 'not-allowed' : 'pointer', 
+                <button
+                  onClick={nextPage}
+                  disabled={currentPage === totalPages}
+                  style={{
+                    backgroundColor: 'rgb(255, 124, 32)',
+                    color: 'white',
+                    border: 'none',
+                    padding: '10px 20px',
+                    cursor: currentPage === totalPages ? 'not-allowed' : 'pointer',
                     opacity: currentPage === totalPages ? 0.5 : 1,
                     borderRadius: '5px',
                     fontSize: '16px',
                     transition: '0.3s',
                     width: '100px',
-                    textAlign: 'center'
+                    textAlign: 'center',
                   }}
                 >
                   Next

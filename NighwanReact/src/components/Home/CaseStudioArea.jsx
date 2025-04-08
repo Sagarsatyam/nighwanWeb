@@ -9,7 +9,7 @@ import hrmsBig from '../../assets/imgs/hrmsBig.png';
 import tmsBig from '../../assets/imgs/tmsBig.png';
 import ecommerceBig from '../../assets/imgs/ecommerceBig.png';
 import data from '../../assets/imgs/data.png';
-import hrms from '../../assets/imgs/hrms.png';
+import hrms from '../../assets/imgs/hrms1.png';
 import tms from '../../assets/imgs/tms.png';
 import ecommerce from '../../assets/imgs/ecom.png';
 import '../../assets/css/style.css'; // Import your custom CSS
@@ -27,7 +27,7 @@ const CaseStudioArea = () => {
     <section className="case-studio-area">
       <div className="custom-container">
         <div className="case-studio-header text-center">
-          <h5 className="section-subtitle">Detailing Our Products</h5>
+          <h5 className="heading-tab">Detailing Our Products</h5>
           <h2 className="section-title">Powerful AI-Driven Solutions to Meet Your Needs</h2>
         </div>
 
@@ -86,11 +86,11 @@ const CaseStudioArea = () => {
               <div className="case-studio-body d-flex">
                 <div className="left d-flex flex-1">
                   <div className="case-studio-img-card simple-shadow">
-                    <Link className="case-studio-cat">Web Design</Link>
+                    <Link className="heading-tab">Web Design</Link>
                     <img src={hrmsBig} alt="hrms" />
                   </div>
                   <div className="case-studio-img-card simple-shadow">
-                    <Link className="case-studio-cat">Mobile Design</Link>
+                    <Link className="heading-tab">Mobile Design</Link>
                     <img src={hrms} alt="hrms" />
                   </div>
                 </div>
@@ -119,11 +119,11 @@ const CaseStudioArea = () => {
               <div className="case-studio-body d-flex">
                 <div className="left d-flex flex-1">
                   <div className="case-studio-img-card simple-shadow">
-                    <Link className="case-studio-cat">Web Design</Link>
+                    <Link className="heading-tab">Web Design</Link>
                     <img src={tmsBig} alt="tms" />
                   </div>
                   <div className="case-studio-img-card simple-shadow">
-                    <Link className="case-studio-cat">Mobile View</Link>
+                    <Link className="heading-tab">Mobile View</Link>
                     <img src={tms} alt="tms" />
                   </div>
                 </div>
@@ -152,11 +152,11 @@ const CaseStudioArea = () => {
               <div className="case-studio-body d-flex">
                 <div className="left d-flex flex-1">
                   <div className="case-studio-img-card simple-shadow">
-                    <Link className="case-studio-cat">Web Design</Link>
+                    <Link className="heading-tab">Web Design</Link>
                     <img src={ecommerceBig} alt="ecommerce" />
                   </div>
                   <div className="case-studio-img-card simple-shadow">
-                    <Link className="case-studio-cat">Mobile Design</Link>
+                    <Link className="heading-tab">Mobile Design</Link>
                     <img src={ecommerce} alt="ecommerce" />
                   </div>
                 </div>
@@ -185,11 +185,11 @@ const CaseStudioArea = () => {
               <div className="case-studio-body d-flex">
                 <div className="left d-flex flex-1">
                   <div className="case-studio-img-card simple-shadow">
-                    <Link className="case-studio-cat">Web Design</Link>
+                    <Link className="heading-tab">Web Design</Link>
                     <img src={dataBig} alt="data" />
                   </div>
                   <div className="case-studio-img-card simple-shadow">
-                    <Link className="case-studio-cat">Mobile Design</Link>
+                    <Link className="heading-tab">Mobile Design</Link>
                     <img src={data} alt="data" />
                   </div>
                 </div>

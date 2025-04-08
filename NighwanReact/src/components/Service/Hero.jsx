@@ -1,12 +1,13 @@
 import serviceAbout from "../../assets/imgs/Service4.png"; 
-
+import '../../assets/css/style.css'; // Import your custom CSS
+import '../../assets/css/responsive.css'; // Import y 
 const HeroService = () => {
     return (
-      <section className="hero-service-wrap hero-section-wrap">
-        <div style={{ paddingTop: '100px'}} className="hero-section-content-wrap">
+      <section >
+        <div className="hero-section-content-wrap">
           <div className="custom-container">
             <div className="hero-section-content text-center">
-              <h5 className="section-subtitle">Our Services</h5>
+              <h5 className="heading">OUR SERVICES</h5>
               <h1 className="section-title fade-in">
               Empowering Businesses with <br />
               Smart & Scalable Solutions

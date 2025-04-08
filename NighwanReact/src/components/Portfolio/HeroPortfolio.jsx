@@ -9,7 +9,7 @@ const HeroPortfolio = () => {
         <div className="custom-container">
           <div className="hero-portfolio-body">
             <div className="hero-section-content text-center">
-              <h5 className="section-subtitle">Our Products</h5>
+              <h5 className="section-subtitle">OUR PRODUCTS</h5>
               <h1 className="section-title fade-in">
                 We are doing world class <br /> projects in your way
               </h1>

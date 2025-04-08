@@ -13,7 +13,7 @@ const TestimonialArea = () => {
       <div className="custom-container">
         <div className="section-header text-center">
           <h5 className="section-subtitle">TESTIMONIAL</h5>
-          <h2 className="section-title">What people think about us</h2>
+          <h1 className="section-title">What people think about us</h1>
           <p>
             Their professionalism and commitment to our success were evident <br /> throughout the
             entire process.

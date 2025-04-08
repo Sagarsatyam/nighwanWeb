@@ -1,15 +1,47 @@
+# Group 1: Allow all well-behaved robots complete access
 User-agent: *
 Allow: /
+
+# Specific page permissions based on the provided routes
 Allow: /about
 Allow: /career
-Allow: /terms
-Allow: /services
+Allow: /service
 Allow: /blog
-Allow: /blog-detail
 Allow: /contact
 Allow: /lean
 Allow: /portfolio
-Allow: /caseStudies
 Allow: /privacy-policy
 Allow: /terms-and-conditions
-Allow: /*
+
+# Allow dynamic routes with specific parameters
+Allow: /job/
+Allow: /service-details/
+Allow: /blogs/
+Allow: /product-detail/
+
+# Prevent crawling of non-essential paths
+Disallow: /admin/
+Disallow: /private/
+Disallow: /temp/
+Disallow: /*.json$
+Disallow: /*?*
+Disallow: /api/
+
+# Sitemap location
+Sitemap: https://nighwantech.com/sitemap.xml
+
+# Crawl-delay directive for better server performance
+Crawl-delay: 10
+
+# Additional rules for specific bots
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 1
+
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 1
+
+User-agent: DuckDuckBot
+Allow: /
+Crawl-delay: 1

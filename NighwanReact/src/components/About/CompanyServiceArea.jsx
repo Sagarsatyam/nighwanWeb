@@ -11,7 +11,7 @@ const CompanyServiceArea = () => {
         <div className="hero-service-about">
           <div className="section-header d-flex align-items-center justify-content-between w-full">
             <div className="left">
-              <h5 className="section-subtitle">OUR STORY</h5>
+              <h5 className="heading">OUR STORY</h5>
               <h2 className="section-title">What makes our company stand out?
               </h2>
               <p>Get in touch today and start your transformation!</p>

@@ -7,25 +7,7 @@ const Contact = ({ locations, supportEmail, phoneNumber }) => {
     <section className="contact-area2">
       <div className="custom-container">
         <div className="contact-inner">
-          <div className="contact-map-wrap">
-            <h4>Connect Us</h4>
-
-            <div id="map">
-              {locations.map((location, index) => (
-                <div className="map-location-item" key={index}>
-                  <div className="map-location-item-inner">
-                    <img src={location.flagImage} alt="Flag" />
-                    <div className="content">
-                      <h3>{location.city}</h3>
-                      <p>{location.address}</p>
-                    </div>
-                  </div>
-                  <span className="circle"></span>
-                </div>
-              ))}
-              <img src={map} alt="Map" />
-            </div>
-          </div>
+          
 
           <div className="contact-inner-info-box d-flex align-items-center">
             <div className="contact-info-box simple-shadow">

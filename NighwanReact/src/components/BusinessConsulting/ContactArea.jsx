@@ -128,9 +128,9 @@ const ContactArea = () => {
             <div className="contact-experience">
               <ul>
                 <li>
-                  <h2>
+                  <h1>
                     18+ <span>Years</span>
-                  </h2>
+                  </h1>
                   <p>Field Experience</p>
                 </li>
                 <li>

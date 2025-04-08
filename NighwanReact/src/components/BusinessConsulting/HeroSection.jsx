@@ -7,15 +7,15 @@ import '../../assets/css/responsive.css'; // Import your responsive CSS
 const HeroSection = () => {
   return (
     <section className="hero-section-wrap hero-home2">
-      <div style={{ paddingTop: '100px' }} className="hero-section-content-wrap">
+      <div style={{ paddingTop: '10px' }} className="hero-section-content-wrap">
         <img className="bg-shape slide-left" src={bgShape6} alt="Shape" />
         <img className="bg-shape2 slide-right" src={bgShape5} alt="Shape" />
         <div className="custom-container">
           <div className="hero-section-content text-center">
-            <h5 className="section-subtitle">LEAN CONSULTANCY</h5>
-            <h2 className="section-title fade-in">
+            <h5 className="heading">LEAN CONSULTANCY</h5>
+            <h1 className="section-title fade-in">
             Empowering Innovation Through Developers
-            </h2>
+            </h1>
             <p>
             Empowering businesses with modern strategies and data-driven insights, we help organizations achieve efficiency, agility, and sustainable success.
             </p>

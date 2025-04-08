@@ -1,28 +1,25 @@
 import React from 'react'
 import { Helmet } from 'react-helmet';  
 
+import "../assets/css/style.css"
+import "../assets/css/responsive.css"
+
 function Terms() {
   return (
     <>
         <section className="hero-servic e-wrap hero-section-wrap hero-blog-wrap">
         <Helmet>  <title>Terms and Conditions | Nighwan Technology Pvt. Ltd.</title>  <meta name="description" content="Read the terms and conditions governing the use of Nighwan Technology Pvt. Ltd.'s website, services, and software products." />  <meta name="keywords" content="terms and conditions, Nighwan Technology policies, software usage policies, website terms, service agreements" /></Helmet>
-        <div className="hero-section-content-wrap">
-          <div className="custom-container">
-            <div className="hero-portfolio-body">
+       
               <div className="hero-section-content text-center">
-                <h2>Terms and Conditions</h2>
+                <h5 className='heading'>Terms and Conditions</h5>
               </div>
-            </div>
-          </div>
-        </div>
-        <div className="custom-container">
-          <div className="blog-details-body">
-            <div className="blog-details-inner">
-              <div className="blog-details-introduction">
-                <h2>Terms and Conditions</h2>
-                <p>Welcome to Nighwan Technology Pvt. Ltd. (“we,” “our,” “us”). These Terms and Conditions govern your use of our website, services, and products. By accessing or using our website www.nighwantech.com, you agree to be bound by these Terms and Conditions. If you do not agree with any part of these terms, you must not use our website or services.</p>
-                <h4>1. Acceptance of Terms</h4>
-                <p>By accessing our website, you confirm that you accept these Terms and Conditions and agree to comply with them. If you do not agree to these terms, you must not use our website.</p>
+   <div className="custom-container">
+        <div className="hero-service-about">
+          {/* <img src={heroCareerAbout} alt="Service About" /> */}
+          <div className="hero-service-about-body">
+          <p>Welcome to Nighwan Technology Pvt. Ltd. (“we,” “our,” “us”). These Terms and Conditions govern your use of our website, services, and products. By accessing or using our website www.nighwantech.com, you agree to be bound by these Terms and Conditions. If you do not agree with any part of these terms, you must not use our website or services.</p>
+          <h4>1. Acceptance of Terms</h4>
+          <p>By accessing our website, you confirm that you accept these Terms and Conditions and agree to comply with them. If you do not agree to these terms, you must not use our website.</p>
                 <h4>2. Changes to Terms</h4>
                 <p>We may revise these Terms and Conditions at any time by updating this page. Your continued use of our website following the posting of revised terms means that you accept and agree to the changes.</p>
                 <h4>3. Access to the Website</h4>
@@ -55,10 +52,10 @@ function Terms() {
                 <p>Add:- 60, Nighwan, Kurtha, Gaya, 804421</p>
                 <p>Email:- info@nighwantech.com</p>
                 <p>Call Us:- +918092225777</p>
-              </div>
-            </div>
           </div>
         </div>
+      </div>
+        
       </section>
 
        

@@ -1,25 +1,31 @@
 import React from 'react';
-import { Link } from 'react-router-dom'; // For navigation
+import { Link } from 'react-router-dom'; 
 import '../assets/css/bootstrap.min.css';
 import { Helmet } from "react-helmet";
 
 const NotFound = () => {
   return (
     <div className="d-flex justify-content-center align-items-center vh-100 bg-light">
-       <Helmet>
-        <title>404 - Nighwan Technology Pvt. Ltd.</title>
-         <meta name="description" content="This is Portfolio page" />
-        <meta name="robots" content="index, follow" />
-        </Helmet>
+      <Helmet>
+        <title>Page Not Found | Return to Nighwan Technology - Leading IT Solutions</title>
+        <meta name="description" content="Sorry, the page you're looking for cannot be found. Return to Nighwan Technology's homepage for expert IT solutions, software development, and digital transformation services." />
+        <meta name="robots" content="noindex, follow" />
+        <link rel="canonical" href="https://nighwantech.com/404" />
+      </Helmet>
       <div className="text-center">
-        <h2 className="display-1 fw-bold text-danger">404</h2>
-        <p className="fs-3">Oops! Page not found.</p>
-        <p className="lead">
-          The page youre looking for doesnt exist or has been moved.
+        <h1 className="display-1 fw-bold text-danger">404</h1>
+        <h2 className="fs-3">Oops! Page Not Found</h2>
+        <p className="lead mb-4">
+          The page you're looking for doesn't exist or has been moved.
         </p>
         <Link to="/" className="btn btn-primary">
-          Go Back Home
+          Return to Homepage
         </Link>
+        <div className="mt-4">
+          <p className="text-muted">
+            Looking for something specific? Visit our <Link to="/services" className="text-decoration-none">services</Link> or <Link to="/contact" className="text-decoration-none">contact us</Link> for assistance.
+          </p>
+        </div>
       </div>
     </div>
   );

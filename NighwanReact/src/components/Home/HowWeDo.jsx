@@ -1,5 +1,5 @@
 import React from 'react';
-import bgShape1 from '../../assets/imgs/bg-shape-1.svg'; // Adjust the path to your images
+import bgShape1 from '../../assets/imgs/bg-shape-2.svg'; // Adjust the path to your images
 import hwdIcon1 from '../../assets/imgs/hwd-icon-1.svg';
 import hwdIcon2 from '../../assets/imgs/hwd-icon-2.svg';
 import hwdIcon3 from '../../assets/imgs/hwd-icon-3.svg';
@@ -18,7 +18,7 @@ const HowWeDo = () => {
           <img src={bgShape1} alt="Shape" className="animation-slide-left how-we-do-bg" />
           <div className="how-we-do-left-content">
             <div className="top">
-              <h5 className="section-subtitle">Our Model</h5>
+              <h5 className="heading">Our Model</h5>
               <h2 className="section-title">How do we work?</h2>
               <p>Transforming Ideas into Impactful Solutions.</p>
             </div>

@@ -1,68 +1,92 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-    <url>
-        <loc>https://nighwantech.leanxpert.in/</loc>
-        <lastmod>2025-02-07T17:57:38+01:00</lastmod>
-        <priority>1.0</priority>
-    </url>
-    <url>
-        <loc>https://nighwantech.leanxpert.in/about</loc>
-        <lastmod>2025-02-07T17:57:38+01:00</lastmod>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://nighwantech.leanxpert.in/career</loc>
-        <lastmod>2025-02-07T17:57:38+01:00</lastmod>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://nighwantech.leanxpert.in/terms</loc>
-        <lastmod>2025-02-07T17:57:38+01:00</lastmod>
-        <priority>0.5</priority>
-    </url>
-    <url>
-        <loc>https://nighwantech.leanxpert.in/services</loc>
-        <lastmod>2025-02-07T17:57:38+01:00</lastmod>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://nighwantech.leanxpert.in/blog</loc>
-        <lastmod>2025-02-07T17:57:38+01:00</lastmod>
-        <priority>0.7</priority>
-    </url>
-    <url>
-        <loc>https://nighwantech.leanxpert.in/blog-detail</loc>
-        <lastmod>2025-02-07T17:57:38+01:00</lastmod>
-        <priority>0.7</priority>
-    </url>
-    <url>
-        <loc>https://nighwantech.leanxpert.in/contact</loc>
-        <lastmod>2025-02-07T17:57:38+01:00</lastmod>
-        <priority>0.7</priority>
-    </url>
-    <url>
-        <loc>https://nighwantech.leanxpert.in/lean</loc>
-        <lastmod>2025-02-07T17:57:38+01:00</lastmod>
-        <priority>0.6</priority>
-    </url>
-    <url>
-        <loc>https://nighwantech.leanxpert.in/portfolio</loc>
-        <lastmod>2025-02-07T17:57:38+01:00</lastmod>
-        <priority>0.7</priority>
-    </url>
-    <url>
-        <loc>https://nighwantech.leanxpert.in/caseStudies</loc>
-        <lastmod>2025-02-07T17:57:38+01:00</lastmod>
-        <priority>0.7</priority>
-    </url>
-     <url>
-        <loc>https://nighwantech.leanxpert.in/privacy-policy</loc>
-        <lastmod>2025-02-07T17:57:38+01:00</lastmod>
-        <priority>0.7</priority>
-    </url>
-     <url>
-        <loc>https://nighwantech.leanxpert.in/terms-and-conditions</loc>
-        <lastmod>2025-02-07T17:57:38+01:00</lastmod>
-        <priority>0.7</priority>
-    </url>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
+        xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+        http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+
+   <url>
+    <loc>https://nighwantech.com/#/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+
+  <url>
+    <loc>https://nighwantech.com/#/our-roots</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+
+  <url>
+    <loc>https://nighwantech.com/#/career</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+
+
+  <url>
+    <loc>https://nighwantech.com/#/terms-and-conditions</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
+
+
+  <url>
+    <loc>https://nighwantech.com/#/privacy-policy</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
+
+
+  <url>
+    <loc>https://nighwantech.com/#/service</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+
+  <url>
+    <loc>https://nighwantech.com/#/service-details/lean-erp</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+
+  <url>
+    <loc>https://nighwantech.com/#/blog</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+
+
+  <url>
+    <loc>https://nighwantech.com/#/contact</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+
+  <url>
+    <loc>https://nighwantech.com/#/lean</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+
+  <url>
+    <loc>https://nighwantech.com/#/products</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+
+  <url>
+    <loc>https://nighwantech.com/#/product-detail/erp</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
 </urlset>

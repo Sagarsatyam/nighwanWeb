@@ -1,0 +1,53 @@
+/* Contact Page Specific Styles */
+.contact-info-email,
+.contact-info-phone {
+    font-size: 24px !important;
+    font-weight: 500;
+    color: #333333;
+    display: block;
+    margin: 10px 0;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+.contact-info-email:hover,
+.contact-info-phone:hover {
+    color: #ff8c00;
+    transform: translateY(-2px);
+}
+
+/* Make links more prominent */
+.contact-info-wrapper a {
+    position: relative;
+    padding: 5px 0;
+}
+
+.contact-info-wrapper a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #ff8c00;
+    transition: width 0.3s ease;
+}
+
+.contact-info-wrapper a:hover::after {
+    width: 100%;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+    .contact-info-email,
+    .contact-info-phone {
+        font-size: 20px !important;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .contact-info-email,
+    .contact-info-phone {
+        font-size: 18px !important;
+    }
+}

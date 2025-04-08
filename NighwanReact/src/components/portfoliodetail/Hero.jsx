@@ -53,12 +53,12 @@ const HeroSection = ({type}) => {
 
     return (
       <>
-      <section className="hero-service-wrap hero-section-wrap hero-overview-wrap">
-        <div style={{ paddingTop: '100px'}} className="hero-section-content-wrap">
+      <section >
+        <div className="hero-section-content-wrap">
           <div className="custom-container">
             <div className="hero-portfolio-body">
               <div className="hero-section-content text-center">
-                <h5 className="section-subtitle">Portfolio</h5>
+                <h5 className="heading">Portfolio</h5>
                 <h1 className="section-title fade-in">
                  {products[type].one}
                 </h1>

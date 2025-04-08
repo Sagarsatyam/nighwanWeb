@@ -1,12 +1,12 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import news1 from '../assets/imgs/news-1.jpg'; 
-import news2 from '../assets/imgs/news-2.jpg';
-import news3 from '../assets/imgs/news-3.jpg';
 import '../assets/css/style.css';
 import '../assets/css/responsive.css';
 import ContactArea from '../components/Home/ContactArea';
 import { Helmet } from 'react-helmet';
+import aimlImgbM from '../assets/imgs/bM/aiml.png'; 
+import erpImgbM from '../assets/imgs/bM/erp.png';
+import hrmsImgbM from '../assets/imgs/bM/hrms.png'; 
 
 const BlogPage = () => {
   return (
@@ -19,14 +19,13 @@ const BlogPage = () => {
       </Helmet>
 
       {/* Hero Blog Section */}
-      <section className="hero-service-wrap hero-section-wrap hero-blog-wrap">
-        <div style={{ paddingTop: '100px' }} className="hero-section-content-wrap">
+      <section >
           <div className="custom-container">
             <div className="hero-portfolio-body">
               <div className="hero-section-content text-center">
-                <h5 className="section-subtitle">Blog</h5>
+                <h5 className="heading">Blogs</h5>
                 <h2 className="section-title fade-in">
-                  Explore our blog for expert knowledge and inspiration
+                  Explore our blogs for expert knowledge and inspiration
                 </h2>
                 <p>
                   Stay connected with us by subscribing to our blog updates. By doing so, <br />
@@ -35,114 +34,83 @@ const BlogPage = () => {
               </div>
             </div>
           </div>
-        </div>
       </section>
 
       {/* News Section */}
       <section className="news-area">
         <div className="custom-container">
           {/* Sticky News */}
+          <Link to="/blogs/aiml"  >
           <div className="sticky-news d-flex card-h" style={{ marginBottom: '5px' }}>
             <div className="news-img-box">
-              <img src={news1} alt="News" />
+              <img src={aimlImgbM} alt="News" />
             </div>
             <div className="news-content">
-              <h5 className="section-subtitle">MOBILE DEVELOPMENT</h5>
+              {/* <h5 className="section-subtitle">MOBILE DEVELOPMENT</h5> */}
               <h2 className="section-title">
-                OpenAI launches new alignment division to tackle risks of superintelligent AI
+              How AI and Lean Manufacturing Are Revolutionizing the Indian Industry
               </h2>
-              <p>
-                The makers of AI have announced the company will be dedicating 20% of its compute
-                processing power over the next four years
-              </p>
-              <ul>
-                <li>
-                  <i className="las la-check"></i> Collaboration Tools
-                </li>
-                <li>
-                  <i className="las la-check"></i> Smart Reminders
-                </li>
-              </ul>
+              <p style={{ fontStyle: 'italic' }}>
+              Discover how Artificial Intelligence (AI) and Lean Manufacturing are reshaping the Indian industry by boosting efficiency, reducing costs, and improving product quality. Learn about key AI-driven innovations like predictive maintenance, smart automation, and supply chain optimization that are transforming manufacturing processes. Stay ahead of the competition with cutting-edge strategies!    
+                        </p>
               <Link to="/blogs/aiml" className="theme-btn">
                 <i className="iconoir-arrow-up-right"></i>
               </Link>
             </div>
           </div>
+          </Link>
 
           {/* News Items */}
           <div className="news-items align-items-start">
             {/* News Item 1 */}
+            <Link to="/blogs/erp"  >
             <div className="news-item card-h" style={{ marginBottom: '5px' }}>
               <div className="news-img-box">
-                <img src={news2} alt="News" />
+                <img src={erpImgbM} alt="News" />
               </div>
               <div className="news-item-body">
-                <h5 className="section-subtitle">WEB DEVELOPMENT</h5>
+                {/* <h5 className="section-subtitle">WEB DEVELOPMENT</h5> */}
                 <h2 className="section-title">
-                  <Link to="/blog-detail">
-                    Bluebase launches Tap to Pay on smartphone for international and domestic
-                    business
+                  <Link to="/blogs/erp">
+                  Why Your Business Needs an Integrated ERP System in 2025
                   </Link>
                 </h2>
-                <p>
-                  Small UK merchants, businesses, and other enterprises can now use Tap to Pay on
-                  service to replace payment terminals at point of sale.
-                </p>
-                <ul>
-                  <li>
-                    <i className="las la-check"></i> Collaboration Tools
-                  </li>
-                  <li>
-                    <i className="las la-check"></i> Smart Reminders
-                  </li>
-                  <li>
-                    <i className="las la-check"></i> Requirement
-                  </li>
-                  <li>
-                    <i className="las la-check"></i> Task Management
-                  </li>
-                </ul>
+                <p style={{ fontStyle: 'italic' }}>
+                Is your business ready for 2025? Discover why an integrated ERP system is essential for streamlining operations, improving efficiency, and gaining a competitive edge. Explore the latest trends in AI-powered automation, cloud-based ERP, and data security to future-proof your business. Learn how Nighwan Technology can help!
+
+</p>
                 <Link to="/blogs/erp" className="theme-btn">
                   <i className="iconoir-arrow-up-right"></i>
                 </Link>
               </div>
             </div>
+            </Link>
 
             {/* News Item 2 */}
+            <Link to="/blogs/hrms" >
             <div className="news-item card-h">
               <div className="news-img-box">
-                <img src={news3} alt="News" />
+                <img src={hrmsImgbM} alt="News" />
               </div>
               <div className="news-item-body">
-                <h5 className="section-subtitle">WEB DEVELOPMENT</h5>
-                <h2 className="section-title">
-                  <Link to="/blog-detail">
-                    Google Bard launches in EU, overcoming data privacy concerns in the region
-                  </Link>
+                {/* <h5 className="section-subtitle">WEB DEVELOPMENT</h5> */}
+                <h2 className="section-title">   
+                <Link to={"/blogs/hrms"}>
+                Transforming Workforce Management with AI-Powered HRMS Solutions
+                </Link>  
                 </h2>
-                <p>
-                  Small UK merchants, businesses, and other enterprises can now use Tap to Pay on
-                  service to replace payment terminals at point of sale.
-                </p>
-                <ul>
-                  <li>
-                    <i className="las la-check"></i> Collaboration Tools
-                  </li>
-                  <li>
-                    <i className="las la-check"></i> Smart Reminders
-                  </li>
-                  <li>
-                    <i className="las la-check"></i> Requirement
-                  </li>
-                </ul>
+                <p style={{ fontStyle: 'italic' }}>
+                HR management is evolving with AI-powered HRMS solutions! Learn how automated payroll, smart recruitment tools, real-time attendance tracking, and AI-driven performance analytics are transforming workforce management. Discover why businesses need AI HRMS in 2025 and how Nighwan Technology can help enhance your HR operations.
+</p>
                 <Link to="/blogs/hrms" className="theme-btn">
                   <i className="iconoir-arrow-up-right"></i>
                 </Link>
               </div>
             </div>
+            </Link>
           </div>
         </div>
-      </section>
+      </section>  
       {/* <FeatureArea /> */}
       <ContactArea />
     </>

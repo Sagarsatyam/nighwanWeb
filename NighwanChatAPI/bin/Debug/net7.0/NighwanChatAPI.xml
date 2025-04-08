@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>NighwanChatAPI</name>
+    </assembly>
+    <members>
+        <member name="M:NighwanChatAPI.Controllers.ChatController.Get">
+            <summary>
+            Health check endpoint
+            </summary>
+        </member>
+        <member name="M:NighwanChatAPI.Controllers.ChatController.Post(NighwanChatAPI.Models.ChatMessage)">
+            <summary>
+            Processes a chat message and returns a response
+            </summary>
+            <param name="message">The chat message containing the query</param>
+            <returns>A response from the chatbot</returns>
+        </member>
+    </members>
+</doc>

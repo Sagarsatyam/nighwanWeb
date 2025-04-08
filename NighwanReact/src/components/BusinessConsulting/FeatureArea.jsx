@@ -16,7 +16,7 @@ const FeatureArea = () => {
         <div className="custom-row">
           <div className="feature2-content">
             <div className="feature2-header">
-              <h5 className="section-subtitle">LEAN CONSULTING EXCELLENCE</h5>
+              <h1 className="heading">LEAN CONSULTING EXCELLENCE</h1>
               <h2 className="section-title">
                 Build a solution that <br />
                 drives efficiency and growth.

@@ -16,10 +16,14 @@ import Portfoliodetail from './Pages/portfolio-detail';
 import Terms from './Pages/Terms';
 import Privacy from './Pages/Privacy';
 import JobDetail from './Pages/JobDetail';
+import ScrollToTop from './components/ScrolltoTop';
+import {  HelmetProvider } from 'react-helmet-async';
 
 function App() {
   return (
+    <HelmetProvider>
     <Router>
+      <ScrollToTop/>
       <Routes>
         {/* The RootLayout wraps all these child routes */}
         <Route path="/" element={<RootLayout />}>
@@ -42,6 +46,7 @@ function App() {
         </Route>
       </Routes>
     </Router>
+    </HelmetProvider>
   );
 }
 
