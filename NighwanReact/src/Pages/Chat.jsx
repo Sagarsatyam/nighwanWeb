@@ -109,7 +109,7 @@ export default function Chat() {
 
   const getChatbotResponse = async (message) => {
     try {
-      const response = await fetch('https://nighwanchat.onrender.com/chat', {
+      const response = await fetch('https://nighwanweb-1.onrender.com/chat', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ query: message }),
